@@ -199,12 +199,13 @@ def user_stats(df, city):
 def raw_data (df):
     """Displays raw data on bikeshare users."""  
     
-    yes_no = ['yes', 'no']
-    d = input('Would you like to see see 5 lines of raw data? Type yes/no: ') 
+    yes_no = ['y', 'n']
+    d = input('Would you like to see see 5 lines of raw data? Type y/n: ') 
     c = 5
-    while d == 'yes':
+    pd.set_option("display.max_columns",200)
+    while d == 'y':
         print(df[c-5:c])
-        d = input('Would you like to see 5 more rows of data? Type yes/no: ')
+        d = input('Would you like to see 5 more rows of data? Type y/n: ')
         c += 5
     
 
@@ -220,8 +221,8 @@ def main():
         user_stats(df, city)
         raw_data(df)
 
-        restart = input('\nWould you like to restart? Enter yes or no.\n')
-        if restart.lower() != 'yes':
+        restart = input('\nWould you like to restart? Enter y or n.\n')
+        if restart.lower() != 'y':
             break
 
 
