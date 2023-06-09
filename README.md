@@ -13,5 +13,5 @@ The project is analyzing data from 3 different bikeshare stations in the US: Was
 Data source files used for this project: chicago.csv, new_york_city.csv, washington.csv
 
 ### Credits
-Simon Katai / Udacity
+Simon Katai
 
