@@ -199,12 +199,12 @@ def user_stats(df, city):
 def raw_data (df):
     """Displays raw data on bikeshare users."""  
     
-    yes_no = ['yes', 'no']
-    d = input('Would you like to see see 5 lines of raw data? Type yes/no: ') 
+    yes_no = ['y', 'n']
+    d = input('Would you like to see see 5 lines of raw data? Type y/n: ') 
     c = 5
-    while d == 'yes':
+    while d == 'y':
         print(df[c-5:c])
-        d = input('Would you like to see 5 more rows of data? Type yes/no: ')
+        d = input('Would you like to see 5 more rows of data? Type y/n: ')
         c += 5
     
 
