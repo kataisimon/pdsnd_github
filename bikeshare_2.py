@@ -202,6 +202,7 @@ def raw_data (df):
     yes_no = ['y', 'n']
     d = input('Would you like to see see 5 lines of raw data? Type y/n: ') 
     c = 5
+    pd.set_option("display.max_columns",200)
     while d == 'y':
         print(df[c-5:c])
         d = input('Would you like to see 5 more rows of data? Type y/n: ')
